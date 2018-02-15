@@ -1,0 +1,66 @@
+<!--
+MIT License
+
+Copyright (c) 2016-2018 GenesisCommunity
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Genesis Key Generator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    <link href="./styles/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div>
+                <img class="logo" src="./images/logo.svg" />
+            </div>
+            <p class="title">Public blockchain platform for building digital ecosystems</p>
+            <p class="subtitle">Create an ecosystem for developing and running blockchain applications in one click.</p>
+        </div>
+    </header>
+    <div class="content wrapper">
+        <div class="heading">Seed</div>
+        <textarea class="result seed" readonly="readonly" id="seed"></textarea>
+
+        <div class="key">
+            <div class="heading">Public key</div>
+            <textarea class="result key" readonly="readonly" id="key"></textarea>
+        </div>
+
+        <div>
+            <button id="generate" class="button primary">Generate</button>
+            <button id="download" class="button secondary">Download</button>
+        </div>
+    </div>
+
+    <script src="./scripts/jsrsasign-all-min.js"></script>
+    <script src="./scripts/random-js.js"></script>
+    <script src="./scripts/genesis.js"></script>
+</body>
+
+</html>

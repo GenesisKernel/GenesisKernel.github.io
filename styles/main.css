@@ -1,0 +1,116 @@
+/*
+MIT License
+
+Copyright (c) 2016-2018 GenesisCommunity
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+html,body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    color: #fff;
+}
+
+header {
+    background: url('../images/back.jpg') top center no-repeat;
+}
+
+header .logo {
+    height: 60px;
+}
+
+header .title {
+    font-size: 34px;
+    color: #fff;
+}
+
+header .subtitle {
+    font-size: 18px;
+    color: #b4b2b9;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.content {
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.result {
+    resize: none;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    border: solid 1px #ccc;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.result.seed {
+    height: 100px;
+}
+
+.result.key {
+    height: 60px;
+}
+
+.key {
+    margin: 10px 0;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 19px;
+    padding: 10px 0;
+}
+
+.button {
+    margin: 20px 10px;
+    background: #009fe3;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 18px 36px;
+    transition: background ease-in-out .15s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button.primary { background: #009fe3; }
+.button.primary:hover { background: #38b9f1; }
+
+.button.secondary { background: #e24792; }
+.button.secondary:hover { background: #fd65ae; }
